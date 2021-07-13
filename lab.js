@@ -149,7 +149,9 @@ if (!changeMyMind) {
 
 //CODE HERE
 
-//I think I accomplished that in the first part of this problem
+if (!changeMyMind) {
+  changeMyMind = true
+} 
 
 console.log(changeMyMind)
 
@@ -278,12 +280,12 @@ switch (letterGrade) {
 //Code Here
 
 for (let i = 1; i <= 100; i++) {
-  if (i % 3 === 0) {
-    console.log('Dev')
+  if ( i % 3 === 0 && i % 5 === 0) {
+    console.log('DevMountain') 
   } else if ( i % 5 === 0) {
     console.log('Mountain')
-  } else if ( i % 3 === 0 && i % 5 === 0) {
-    console.log('DevMountain')
+  } else if (i % 3 === 0) {
+    console.log('Dev')
   } else {
     console.log(i)
   }
